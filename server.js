@@ -1,50 +1,49 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const fs = require('fs');
-const app = express();
 
-app.use(bodyParser.json());
+const app = express();
+const PORT = 3000;
+
+// ✅ serve all files (THIS IS THE FIX)
 app.use(express.static(__dirname));
 
-// simple database (JSON file)
-const DB_FILE = 'users.json';
+app.use(bodyParser.json());
 
-function loadUsers() {
-  if (!fs.existsSync(DB_FILE)) return [];
-  return JSON.parse(fs.readFileSync(DB_FILE));
+// simple route test
+app.get('/', (req, res) => {
+  res.send('Server is working ✅');
+});
+
+// load users
+let users = [];
+if (fs.existsSync('users.json')) {
+  users = JSON.parse(fs.readFileSync('users.json'));
 }
 
-function saveUsers(users) {
-  fs.writeFileSync(DB_FILE, JSON.stringify(users, null, 2));
-}
-
-// REGISTER
+// register
 app.post('/register', (req, res) => {
   const { username, password } = req.body;
-  let users = loadUsers();
 
   if (users.find(u => u.username === username)) {
-    return res.json({ success: false, message: 'User exists' });
+    return res.json({ success: false });
   }
 
-  users.push({ username, password, score: 0 });
-  saveUsers(users);
+  users.push({ username, password });
+  fs.writeFileSync('users.json', JSON.stringify(users));
 
   res.json({ success: true });
 });
 
-// LOGIN
+// login
 app.post('/login', (req, res) => {
   const { username, password } = req.body;
-  let users = loadUsers();
 
   const user = users.find(u => u.username === username && u.password === password);
 
-  if (!user) {
-    return res.json({ success: false });
-  }
-
-  res.json({ success: true, user });
+  res.json({ success: !!user });
 });
 
-app.listen(3000, () => console.log('Server running on http://localhost:3000'));
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
+});
