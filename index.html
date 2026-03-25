@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home - Learn Chinese</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: url('https://images.unsplash.com/photo-1549692520-acc6669e2f0c') no-repeat center/cover;
+      color: white;
+      text-align: center;
+<script>
+let user = JSON.parse(localStorage.getItem('user'));
+if(!user){
+  location.href='login.html';
+}
+</script>
+    }
+
+    header, footer {
+      background: rgba(0,0,0,0.7);
+      padding: 15px;
+    }
+
+    nav a {
+      margin: 10px;
+      padding: 10px 20px;
+      background: red;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .container {
+      margin-top: 120px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Learn Chinese 🇨🇳</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="lessons.html">Lesson</a>
+    <a href="quiz.html">Quiz</a>
+  </nav>
+</header>
+
+<div class="container">
+  <h2>Welcome 👋</h2>
+  <p>Start learning Chinese step by step.</p>
+</div>
+
+<footer>
+  © Mrkorb
+</footer>
+
+</body>
+</html>

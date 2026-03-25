@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz - Learn Chinese</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      background: #111;
+      color: white;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 10px;
+      padding: 10px 20px;
+      background: red;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px;
+      margin: 10px;
+      width: 200px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Quiz 🧠</h1>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="lessons.html">Lesson</a>
+  <a href="quiz.html">Quiz</a>
+</nav>
+
+<div>
+  <p>What is the meaning of 你好?</p>
+
+  <button onclick="checkAnswer(true)">Hello</button>
+  <button onclick="checkAnswer(false)">Goodbye</button>
+
+  <p id="result"></p>
+</div>
+
+<script>
+function checkAnswer(correct) {
+  if (correct) {
+    document.getElementById("result").innerText = "✅ Correct!";
+  } else {
+    document.getElementById("result").innerText = "❌ Wrong!";
+  }
+}
+</script>
+
+</body>
+</html>
