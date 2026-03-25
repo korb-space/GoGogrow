@@ -15,6 +15,7 @@ function speak(text) {
 
 // ================= QUIZ DATA =================
 const quizData = [
+  PORT = process.env.PORT || 3000;
   {
     question: "What is 你好?",
     answers: ["Hello", "Goodbye"],
