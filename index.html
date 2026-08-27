@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LifePath មាគ៌ាជីវិត — ចែករំលែកចំណេះដឹង មេរៀន សំឡេង វីដេអូ និងសៀវភៅ។">
+  <title>LifePath មាគ៌ាជីវិត</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <a class="brand" href="#">
+          <span class="brand-mark">LP</span>
+          <span>
+            <strong>LifePath</strong>
+            <small>មាគ៌ាជីវិត</small>
+          </span>
+        </a>
+
+        <div class="header-actions">
+          <button class="icon-btn" id="searchBtn" aria-label="ស្វែងរក">⌕</button>
+          <button class="theme-toggle" id="themeToggle" aria-label="ប្តូររបៀបពន្លឺ">
+            <span class="sun">☀</span><span class="toggle-track"><i></i></span><span class="moon">☾</span>
+          </button>
+          <button class="menu-btn" id="menuBtn" aria-label="បើកម៉ឺនុយ"><span></span><span></span><span></span></button>
+        </div>
+      </div>
+    </div>
+
+    <nav class="nav" id="mainNav">
+      <div class="container nav-inner">
+        <a class="nav-link active" href="#home">ទំព័រដើម</a>
+        <div class="nav-dropdown">
+          <button class="nav-link drop-btn">ជីវប្រវត្តិ <span>⌄</span></button>
+          <div class="dropdown-menu">
+            <a href="#about">ប្រវត្តិ និងស្នាដៃ</a>
+            <a href="#about">គោលបំណង</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-link drop-btn">សម្លេង <span>⌄</span></button>
+          <div class="dropdown-menu">
+            <a href="#audio">ធម្មទេសនា</a>
+            <a href="#audio">សំឡេងប្រចាំថ្ងៃ</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-link drop-btn">វីដេអូមេរៀន <span>⌄</span></button>
+          <div class="dropdown-menu">
+            <a href="#videos">មេរៀនថ្មីៗ</a>
+            <a href="#videos">មេរៀនពេញនិយម</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-link drop-btn">សៀវភៅ <span>⌄</span></button>
+          <div class="dropdown-menu">
+            <a href="#books">សៀវភៅអាន</a>
+            <a href="#books">សៀវភៅឌីជីថល</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-link drop-btn">ទាញយក <span>⌄</span></button>
+          <div class="dropdown-menu">
+            <a href="#downloads">ឯកសារ</a>
+            <a href="#downloads">សៀវភៅ PDF</a>
+          </div>
+        </div>
+        <a class="nav-link" href="#rules">លក្ខន្តិកៈ</a>
+        <a class="nav-link" href="#contact">ទំនាក់ទំនង</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-badge">មាគ៌ាចំណេះដឹង • មាគ៌ាជីវិត</div>
+        <h1>ស្វែងរកមាគ៌ាដ៏ល្អ<br><span>សម្រាប់ជីវិតរបស់អ្នក</span></h1>
+        <p>ចែករំលែកចំណេះដឹង គំនិតល្អ និងមេរៀនដែលជួយឱ្យជីវិតកាន់តែមានន័យ។</p>
+        <div class="hero-buttons">
+          <a href="#videos" class="btn primary">ចាប់ផ្តើមរៀន</a>
+          <a href="#about" class="btn ghost">ស្វែងយល់បន្ថែម</a>
+        </div>
+      </div>
+      <div class="slider-dots"><button class="dot active"></button><button class="dot"></button><button class="dot"></button></div>
+    </section>
+
+    <section class="quick-section">
+      <div class="container quick-grid">
+        <a href="#audio" class="quick-card"><span class="quick-icon">♫</span><span><b>សម្លេង</b><small>ស្តាប់មេរៀន</small></span><em>›</em></a>
+        <a href="#videos" class="quick-card"><span class="quick-icon">▶</span><span><b>វីដេអូ</b><small>មើលមេរៀន</small></span><em>›</em></a>
+        <a href="#books" class="quick-card"><span class="quick-icon">▤</span><span><b>សៀវភៅ</b><small>អាន និងសិក្សា</small></span><em>›</em></a>
+        <a href="#downloads" class="quick-card"><span class="quick-icon">↓</span><span><b>ទាញយក</b><small>ឯកសារសម្រាប់អ្នក</small></span><em>›</em></a>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">ABOUT LIFEPATH</span>
+          <h2>ស្វាគមន៍មកកាន់ <span>មាគ៌ាជីវិត</span></h2>
+          <p>ទីកន្លែងសម្រាប់ស្វែងរកចំណេះដឹង និងការយល់ដឹងដែលអាចយកទៅប្រើប្រាស់ក្នុងជីវិតប្រចាំថ្ងៃ។</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-image"><div class="image-placeholder">LifePath<br><small>មាគ៌ាជីវិត</small></div></div>
+          <div class="about-text">
+            <h3>ចំណេះដឹងល្អ ចាប់ផ្តើមពីការស្តាប់ និងការរៀន</h3>
+            <p>LifePath មាគ៌ាជីវិត ត្រូវបានរៀបចំឡើងដើម្បីប្រមូលផ្តុំមេរៀន សំឡេង វីដេអូ និងសៀវភៅដែលមានប្រយោជន៍សម្រាប់ការអភិវឌ្ឍខ្លួន និងការរស់នៅប្រកបដោយការយល់ដឹង។</p>
+            <div class="stats"><div><strong>100+</strong><small>មេរៀន</small></div><div><strong>50+</strong><small>វីដេអូ</small></div><div><strong>30+</strong><small>សៀវភៅ</small></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="videos">
+      <div class="container">
+        <div class="section-heading row-heading"><div><span class="eyebrow">VIDEO LESSONS</span><h2>វីដេអូ <span>មេរៀន</span></h2></div><a href="#" class="view-all">មើលទាំងអស់ →</a></div>
+        <div class="cards">
+          <article class="content-card"><div class="thumb thumb-1"><span class="play">▶</span><small>12:35</small></div><div class="card-body"><span class="tag">មេរៀន</span><h3>ការយល់ដឹងអំពីជីវិត និងការរស់នៅ</h3><p>មេរៀនថ្មីសម្រាប់ការអភិវឌ្ឍខ្លួន។</p></div></article>
+          <article class="content-card"><div class="thumb thumb-2"><span class="play">▶</span><small>18:20</small></div><div class="card-body"><span class="tag">ចំណេះដឹង</span><h3>វិធីរក្សាចិត្តឱ្យស្ងប់ក្នុងជីវិតប្រចាំថ្ងៃ</h3><p>គំនិតសាមញ្ញដែលអាចអនុវត្តបានរាល់ថ្ងៃ។</p></div></article>
+          <article class="content-card"><div class="thumb thumb-3"><span class="play">▶</span><small>24:10</small></div><div class="card-body"><span class="tag">ធម៌</span><h3>ការអត់ធ្មត់ និងការយល់ចិត្តអ្នកដទៃ</h3><p>រៀនមើលជីវិតដោយទស្សនៈថ្មី។</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="audio">
+      <div class="container">
+        <div class="section-heading row-heading"><div><span class="eyebrow">AUDIO</span><h2>សម្លេង <span>មេរៀន</span></h2></div><a href="#" class="view-all">មើលទាំងអស់ →</a></div>
+        <div class="audio-list">
+          <div class="audio-item"><button class="audio-play">▶</button><div><b>មាគ៌ានៃការរស់នៅដោយសុខ</b><small>មេរៀនទី ១ • 15:42</small></div><div class="wave">▁▃▅▃▆▂▅▇▃▅▂</div><button class="download">↓</button></div>
+          <div class="audio-item"><button class="audio-play">▶</button><div><b>ចិត្តស្ងប់ ជីវិតស្ងប់</b><small>មេរៀនទី ២ • 21:08</small></div><div class="wave">▂▅▃▇▅▂▆▃▅▇▂</div><button class="download">↓</button></div>
+          <div class="audio-item"><button class="audio-play">▶</button><div><b>ការយល់ដឹង និងការអភ័យទោស</b><small>មេរៀនទី ៣ • 18:26</small></div><div class="wave">▃▆▂▅▇▃▅▂▆▅▃</div><button class="download">↓</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="books">
+      <div class="container">
+        <div class="section-heading row-heading"><div><span class="eyebrow">DIGITAL LIBRARY</span><h2>សៀវភៅ <span>អាន និងសិក្សា</span></h2></div><a href="#" class="view-all">មើលទាំងអស់ →</a></div>
+        <div class="books-grid">
+          <div class="book"><div class="book-cover">មាគ៌ា<br>ជីវិត</div><div><h3>មាគ៌ាជីវិត</h3><p>សៀវភៅចំណេះដឹង</p><a href="#">អានសៀវភៅ →</a></div></div>
+          <div class="book"><div class="book-cover">ចិត្ត<br>ស្ងប់</div><div><h3>ចិត្តស្ងប់ ជីវិតស្ងប់</h3><p>សៀវភៅអភិវឌ្ឍខ្លួន</p><a href="#">អានសៀវភៅ →</a></div></div>
+          <div class="book"><div class="book-cover">គំនិត<br>ល្អ</div><div><h3>គំនិតល្អប្រចាំថ្ងៃ</h3><p>សៀវភៅអាន</p><a href="#">អានសៀវភៅ →</a></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="downloads">
+      <div class="container cta-inner"><div><span class="eyebrow">FREE RESOURCES</span><h2>ទាញយកធនធានសម្រាប់ការសិក្សា</h2><p>រក្សាទុកមេរៀន និងឯកសារដែលមានប្រយោជន៍សម្រាប់អ្នក។</p></div><a href="#" class="btn primary">មើលការទាញយក ↓</a></div>
+    </section>
+
+    <section class="section compact" id="rules">
+      <div class="container"><div class="section-heading"><span class="eyebrow">OUR PRINCIPLES</span><h2>គោលការណ៍ <span>មាគ៌ាជីវិត</span></h2><p>ចែករំលែកចំណេះដឹងដោយការគោរព សុចរិតភាព និងការទទួលខុសត្រូវ។</p></div></div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="container footer-grid">
+      <div><a class="brand footer-brand" href="#"><span class="brand-mark">LP</span><span><strong>LifePath</strong><small>មាគ៌ាជីវិត</small></span></a><p>មាគ៌ានៃចំណេះដឹង ដើម្បីជីវិតដែលមានន័យ។</p></div>
+      <div><h4>តំណភ្ជាប់</h4><a href="#about">ជីវប្រវត្តិ</a><a href="#audio">សម្លេង</a><a href="#videos">វីដេអូ</a><a href="#books">សៀវភៅ</a></div>
+      <div><h4>ព័ត៌មាន</h4><a href="#downloads">ទាញយក</a><a href="#rules">លក្ខន្តិកៈ</a><a href="#">ឯកជនភាព</a></div>
+      <div><h4>ទំនាក់ទំនង</h4><p>អ៊ីមែល: info@lifepath.org</p><p>Telegram: @lifepath</p></div>
+    </div>
+    <div class="copyright">© 2026 LifePath មាគ៌ាជីវិត. All Rights Reserved.</div>
+  </footer>
+
+  <div class="search-panel" id="searchPanel"><div class="search-box"><button id="closeSearch">×</button><input type="search" placeholder="ស្វែងរកនៅក្នុងគេហទំព័រ..."><span>⌕</span></div></div>
+  <script src="js/script.js"></script>
+</body>
+</html>
